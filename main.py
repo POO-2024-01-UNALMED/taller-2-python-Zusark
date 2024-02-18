@@ -27,7 +27,7 @@ class Auto:
         self.precio = 9
         self.asientos = []
         self.marca = marca
-        self.motor = Motor
+        self.motor = motor
         self.registro = 0
 
     def cantidadAsientos(self):
