@@ -6,7 +6,7 @@ class Asiento:
     
     def cambiarColor(self, color):
         if color in ("amarillo", "rojo","verde","negro","blanco"):
-                self.color = color
+            self.color = color
 
 class Motor:
     def __init__(self, numeroCilindros,tipo,registro):
@@ -27,7 +27,7 @@ class Auto:
         self.precio = 9
         self.asientos = []
         self.marca = marca
-        self.motor = motor
+        self.motor = Motor
         self.registro = 0
 
     def cantidadAsientos(self):
