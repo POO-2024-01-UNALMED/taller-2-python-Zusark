@@ -24,16 +24,16 @@ class Auto:
     cantidadCreados = 0
     def __init__(self,modelo,precio,asientos,marca,motor,registro):
         self.modelo = modelo
-        self.precio = 9
+        self.precio = 0           
         self.asientos = []
         self.marca = marca
-        self.motor = Motor
+        self.motor = motor
         self.registro = 0
 
     def cantidadAsientos(self):
         k = 0
         for i in self.asientos:
-            if i == type(Asiento):
+            if i == type(Asiento()):
                 k+=1
         return k
     
@@ -43,7 +43,7 @@ class Auto:
                 if self.asientos[i] != None:
                     if self.asientos[i].registro != self.registro:
                         return "Las piezas no son originales"
-            i+=1
+                i+=1
             return "Auto original"
         else:
             return "Las piezas no son originales"
