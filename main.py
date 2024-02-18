@@ -27,7 +27,7 @@ class Auto:
         self.precio = 9
         self.asientos = []
         self.marca = marca
-        self.motor = motor
+        self.motor = Motor
         self.registro = 0
 
     def cantidadAsientos(self):
@@ -43,6 +43,7 @@ class Auto:
                 if self.asientos[i] != None:
                     if self.asientos[i].registro != self.registro:
                         return "Las piezas no son originales"
+            i+=1
             return "Auto original"
         else:
             return "Las piezas no son originales"
